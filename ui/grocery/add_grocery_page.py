@@ -150,6 +150,11 @@ def open_add_grocery_page(parent, user_id, current_frame=None):
                     "For this category, quantity must be in kilograms (e.g. 1kg, 0.5kg, 2.25kg)."
                 )
                 return
+        
+        elif category_name in LITER_CATEGORIES: # CONDITION IF CATEGORY IS IN LITERS
+            if not re.match(r'^\d+(\.\d+)?L$', quantity): # CHECKS IF THE QUANTITY IS IN LITERS UNIT
+                mb.showerror("Quantity Error", "For this category, quantity must be in liters (e.g. 1l, 0.5l, 2.5l).")
+                return
             
         elif category_name in PIECE_CATEGORIES: # CONDITION IF CATEGORY IS IN PIECES
             if not re.match(r'^\d+x$', quantity): # CHECKS IF THE QUANTITY IS IN PIECES UNIT
@@ -274,5 +279,6 @@ def open_add_grocery_page(parent, user_id, current_frame=None):
         text_color="#888888",
     )
     footer_label.grid(row=1, column=0, columnspan=2, pady=5)
+
 
     return grocery_frame
