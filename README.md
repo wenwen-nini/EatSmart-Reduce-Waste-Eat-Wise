@@ -96,23 +96,19 @@ EatSmart/
 │   ├── meal_query.py         # Meal plan CRUD operations
 │   └── user_query.py         # User authentication
 ├── ui/
-│   ├── dashboard.py          # Dashboard page
-│   ├── grocery_page.py       # Grocery list page
-│   ├── mealplan_page.py      # Meal plan page
-│   ├── settings.py           # Settings/profile page
-│   ├── login_page.py         # Login page
-│   ├── register_page.py      # Registration page
-│   ├── meal/
-│   │   ├── add_meal_page.py
-│   │   └── edit_meal_page.py
-│   └── grocery/
-│       ├── add_grocery_page.py
-│       ├── edit_grocery_page.py
-│       └── delete_grocery_page.py
-└── components/
-    ├── custom_widgets.py     # Reusable UI components
-    ├── navbar.py             # Navigation bar component
-    └── theme_toggle.py       # Theme utilities
+    ├── dashboard.py          # Dashboard page
+    ├── grocery_page.py       # Grocery list page
+    ├── mealplan_page.py      # Meal plan page
+    ├── settings.py           # Settings/profile page
+    ├── login_page.py         # Login page
+    ├── register_page.py      # Registration page
+    ├── meal/
+    │   ├── add_meal_page.py
+    │   └── edit_meal_page.py
+    └── grocery/
+        ├── add_grocery_page.py
+        ├── edit_grocery_page.py
+        └── delete_grocery_page.py
 ```
 
 ## Database Schema
