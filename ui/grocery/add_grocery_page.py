@@ -132,7 +132,8 @@ def open_add_grocery_page(parent, user_id, current_frame=None):
 
         import re # IMPORTS RE FOR NECESSARY FORMAT
         KG_CATEGORIES = {"Fruits", "Vegetables", "Meat", "Fisheries"} # SPECIFIED CATEGORIES FOR USING KILOGRAMS (e.g '10kg', '0.5kg')
-        PIECE_CATEGORIES = {"Canned Goods", "Pastries", "Beverages", "Condiments", "Dairy"} # SPECIFIC CATEGORIES FOR USING PIECES (e.g '3x', '10x')
+        PIECE_CATEGORIES = {"Canned Goods", "Pastries", "Condiments", "Dairy"} # SPECIFIC CATEGORIES FOR USING PIECES (e.g '3x', '10x')
+        LITER_CATEGORIES = {"Beverages"}
 
         grocery = grocery_entry.get().strip() # GETS THE GROCERY VALUE
         quantity = quantity_entry.get().strip() # GETS THE QUANTITY VALUE
@@ -282,3 +283,4 @@ def open_add_grocery_page(parent, user_id, current_frame=None):
 
 
     return grocery_frame
+
